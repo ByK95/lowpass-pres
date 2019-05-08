@@ -23,10 +23,6 @@
 		</script>
 	</head>
 	<style>
-	.sourcecode{
-		width: 300px;
-		float: left;
-	}
 	</style>
 	<body>
 		<div class="reveal">
@@ -91,41 +87,48 @@
 					<img class="stretch" style="border:0px solid #666;" src="./img/componenetcalc2.png">
 				</section>
 				<section>
-					<img width="600" style="border:0px solid #666;float: left;" src="./img/1stordcircuit.jpeg">
-					<pre><code class="sourcecode">Vin 0 1 ac 1
-R3 1 2 1k
-R1 3 0 1k
-R2 3 4 9k
-C1 2 0 8n
-X1 2 3 4 opamp
-.subckt opamp 10 11 13
-Rin 10 11 5e7
-Ro 12 13 40
-Eav 12 0 10 11 100
-.ends
-.ac dec 10 1k 2e6
-.end</code></pre>
+					<div>
+					<img height="351" style="border:0px solid #666;float: left;" src="./img/1stordcircuit.jpeg">
+					<div style="position: absolute; width: 250px; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 8px ;font-size: 20px; text-align: left;">
+							<p>Vin 0 1 ac 1 <br>
+							R3 1 2 1k <br>
+R1 3 0 1k <br>
+R2 3 4 9k <br>
+C1 2 0 8n <br>
+X1 2 3 4 opamp <br>
+.subckt opamp 10 11 13 <br>
+Rin 10 11 5e7 <br>
+Ro 12 13 40 <br>
+Eav 12 0 10 11 100 <br>
+.ends <br>
+.ac dec 10 1k 2e6 <br>
+.end</p>
+						</div>
+</div>
 				</section>
 				<section data-background="./img/single_stage_opamp.png" data-background-size="contain"></section>
 				
-				<section>
-					<img width="600" style="border:0px solid #666;float: left;" src="./img/2ordercircuit.jpeg">
-					<pre><code class="sourcecode">Vin 0 1 ac 1
-R1 1 2 1k
-R2 2 4 1k
-C1 2 4 8n
-X1 0 2 4 opamp
-R3 4 5 1k
-X2 0 5 6 opamp
-R4 5 6 1k
-C2 5 6 8n
-.subckt opamp 10 11 13
-Rin 10 11 5e7
-Ro 12 13 40
-Eav 12 0 10 11 100
-.ends
-.ac dec 10 1k 2e5
-.end</code></pre>
+				<section >
+					<img height="330" style="border:0px solid #666;float: left;" src="./img/2ordercircuit.jpeg">
+					<div style="position: absolute; width: 250px; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 8px ;font-size: 20px; text-align: left;">
+					<p>
+							R1 1 2 1k <br>
+							R2 2 4 1k <br>
+							C1 2 4 8n <br>
+							X1 0 2 4 opamp <br>
+							R3 4 5 1k <br>
+							X2 0 5 6 opamp <br>
+							R4 5 6 1k <br>
+							C2 5 6 8n <br>
+							.subckt opamp 10 11 13 <br>
+							Rin 10 11 5e7 <br>
+							Ro 12 13 40 <br>
+							Eav 12 0 10 11 100 <br>
+							.ends <br>
+							.ac dec 10 1k 2e5 <br>
+							.end
+					</p>
+					</div>
 					</section>
 				<section data-background="./img/double_stage_opamp.png" data-background-size="contain" ></section>
 				<section>
