@@ -87,6 +87,7 @@
 					<img class="stretch" style="border:0px solid #666;" src="./img/componenetcalc2.png">
 				</section>
 				<section>
+<<<<<<< HEAD
 					<div>
 					<img height="351" style="border:0px solid #666;float: left;" src="./img/1stordcircuit.jpeg">
 					<div style="position: absolute; width: 250px; right: 0; box-shadow: 0 1px 4px rgba(2, 2, 2, 0.452), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.726); color: #fff; padding-left: 16px ;font-size: 24px; text-align: left;">
@@ -129,6 +130,43 @@ Eav 12 0 10 11 100 <br>
 							.end
 					</p>
 					</div>
+=======
+					<img width="600" style="border:0px solid #666;float: left;" src="./img/1stordcircuit.jpeg">
+					<pre><code class="sourcecode">Vin 0 1 ac 1
+R3 1 2 1k
+R1 3 0 1k
+R2 3 4 9k
+C1 2 0 8n
+X1 2 3 4 opamp
+.subckt opamp 10 11 13
+Rin 10 11 5e7
+Ro 12 13 40
+Eav 12 0 10 11 100
+.ends
+.ac dec 10 1k 2e6
+.end</code></pre>
+				</section>
+				<section data-background="./img/single_stage_opamp.png" data-background-size="contain"></section>
+				
+				<section>
+					<img width="600" style="border:0px solid #666;float: left;" src="./img/2ordercircuit.jpeg">
+					<pre><code class="sourcecode">Vin 0 1 ac 1
+R1 1 2 1k
+R2 2 4 1k
+C1 2 4 8n
+X1 0 2 4 opamp
+R3 4 5 1k
+X2 0 5 6 opamp
+R4 5 6 1k
+C2 5 6 8n
+.subckt opamp 10 11 13
+Rin 10 11 5e7
+Ro 12 13 40
+Eav 12 0 10 11 100
+.ends
+.ac dec 10 1k 2e5
+.end</code></pre>
+>>>>>>> parent of b144b3be... code and circuit in one picture
 					</section>
 				<section data-background="./img/double_stage_opamp.png" data-background-size="contain" ></section>
 				<section>
