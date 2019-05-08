@@ -23,10 +23,6 @@
 		</script>
 	</head>
 	<style>
-	.sourcecode{
-		width: 300px;
-		float: left;
-	}
 	</style>
 	<body>
 		<div class="reveal">
@@ -91,13 +87,49 @@
 					<img class="stretch" style="border:0px solid #666;" src="./img/componenetcalc2.png">
 				</section>
 				<section>
-					<img class="stretch" style="border:0px solid #666;float: left;" src="./img/1stordcircuit.jpeg">
+					<div>
+					<img height="351" style="border:0px solid #666;float: left;" src="./img/1stordcircuit.jpeg">
+					<div style="position: absolute; width: 250px; right: 0; box-shadow: 0 1px 4px rgba(2, 2, 2, 0.452), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.726); color: #fff; padding-left: 16px ;font-size: 24px; text-align: left;">
+							<p>Vin 0 1 ac 1 <br>
+							R3 1 2 1k <br>
+R1 3 0 1k <br>
+R2 3 4 9k <br>
+C1 2 0 8n <br>
+X1 2 3 4 opamp <br>
+.subckt opamp 10 11 13 <br>
+Rin 10 11 5e7 <br>
+Ro 12 13 40 <br>
+Eav 12 0 10 11 100 <br>
+.ends <br>
+.ac dec 10 1k 2e6 <br>
+.end</p>
+						</div>
+</div>
 				</section>
 				<section data-background="./img/single_stage_opamp.png" data-background-size="contain"></section>
 				
-				<section>
-					<img class="stretch" style="border:0px solid #666;float: left;" src="./img/2ordercircuit.jpeg">
-				</section>
+				<section >
+					<img height="330" style="border:0px solid #666;float: left;" src="./img/2ordercircuit.jpeg">
+					<div style="position: absolute; width: 250px; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.726); color: #fff; padding-left: 16px ;font-size: 24px; text-align: left;">
+					<p>
+							R1 1 2 1k <br>
+							R2 2 4 1k <br>
+							C1 2 4 8n <br>
+							X1 0 2 4 opamp <br>
+							R3 4 5 1k <br>
+							X2 0 5 6 opamp <br>
+							R4 5 6 1k <br>
+							C2 5 6 8n <br>
+							.subckt opamp 10 11 13 <br>
+							Rin 10 11 5e7 <br>
+							Ro 12 13 40 <br>
+							Eav 12 0 10 11 100 <br>
+							.ends <br>
+							.ac dec 10 1k 2e5 <br>
+							.end
+					</p>
+					</div>
+					</section>
 				<section data-background="./img/double_stage_opamp.png" data-background-size="contain" ></section>
 				<section>
 					<h1>TEŞEKKÜRLER</h1>
